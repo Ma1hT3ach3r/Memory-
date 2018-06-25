@@ -93,7 +93,7 @@ var numMatches = 0;
 var flippedTiles = [];
 var delayStartFC = null;
 
-mouseClicked = function() {
+function mouseClicked() {
     for (var i = 0; i < tiles.length; i++) {
         var tile = tiles[i];
         if (tile.isUnderMouse(mouseX, mouseY)) {
@@ -116,7 +116,7 @@ mouseClicked = function() {
     }
 };
 
-draw = function() {
+function draw() {
     background(255, 255, 255);
     if (delayStartFC && (frameCount - delayStartFC) > 30) {
         for (var i = 0; i < tiles.length; i++) {
